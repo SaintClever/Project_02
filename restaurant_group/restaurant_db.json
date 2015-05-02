@@ -11,11 +11,12 @@
   "items": [
     {
       "id": 1,
-      "restaurant_id": 1,
+      "restaurantId": 1,
       "name": "hamburger",
       "price": 10,
       "order_count": 0,
       "image_url": "http://kleberly.com/data_images/wallpapers/7/277047-hamburger.jpg"
     }
-  ]
+  ],
+  "images": []
 }
