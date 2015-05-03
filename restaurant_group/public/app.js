@@ -5,7 +5,6 @@ var template2 = $('script[data-id="template2"]').text();
 var $tbody = $('tbody');
 var $import = $('import');
 
-$('#div').css('display', 'inline-block').hide().fadeIn(6000);
 
 //POST
 $('.ui.red.button').on('click', function(){
@@ -93,6 +92,20 @@ $.ajax({
 $('tbody').append(restaurantElements);
 });
 
+// THIS IS ALL FOR THE ITEMS
+
+//POST
+$('.ui.red.button').on('click', function(){
+	$.ajax({
+		method: "POST",
+		url: "/items",
+		contentType: 'application/json'
+	}).done(function(data){
+		var html = Mustache.render(template2, data);
+		console.log("Is this sh#t working?");
+		$('tbody').append(html);
+	});
+});
 
 
 
