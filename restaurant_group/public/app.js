@@ -1,8 +1,11 @@
 console.log("LINKED");
 
 var template = $('script[data-id="template"]').text();
-var $template2 = $('script[data-id="template2"]').text();
+var template2 = $('script[data-id="template2"]').text();
 var $tbody = $('tbody');
+var $import = $('import');
+
+$('#div').css('display', 'inline-block').hide().fadeIn(6000);
 
 //POST
 $('.ui.red.button').on('click', function(){
@@ -55,9 +58,6 @@ $('tbody').on('click', '[data-action="view"]', function(e){
 		$('tbody').append(items);
 	});
 });
-
-
-
 
 
 // DELETE

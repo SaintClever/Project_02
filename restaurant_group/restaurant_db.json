@@ -1,11 +1,7 @@
 {
   "restaurants": [
     {
-      "id": 1,
-      "name": "Denny's",
-      "location": "Chicago",
-      "cuisine": "American",
-      "image_url": "http://www.coupons4utah.com/wp-content/uploads/2012/06/dennys-breakfast.jpg"
+      "id": 1
     }
   ],
   "items": [
@@ -22,6 +18,13 @@
     },
     {
       "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
     }
-  ]
+  ],
+  "images": []
 }
